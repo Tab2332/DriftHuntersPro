@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 
 const TinyAutoKnightsPage: React.FC = () => {
   return (
-    <div className="bg-gray-50 text-gray-900">
+    <div className="bg-gray-50 text-gray-900 pt-28">
       <Helmet>
         <title>Tiny Auto Knights - Play Auto-Battler Game Free | Gamedock</title>
         <meta name="description" content="Play Tiny Auto Knights for free on Gamedock! Command your army of tiny but mighty knights in this epic auto-battler adventure. No downloads required—start your strategic journey now!" />

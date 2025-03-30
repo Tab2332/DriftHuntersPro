@@ -25,7 +25,7 @@ export const CategoryNavigation: React.FC = () => {
   const location = useLocation();
 
   return (
-    <div className="bg-white shadow-sm">
+    <div className="bg-white shadow-sm fixed top-20 left-0 right-0 z-40">
       <nav className="max-w-full mx-auto px-2">
         <div className="flex items-center justify-between h-16">
           {/* Desktop Navigation */}

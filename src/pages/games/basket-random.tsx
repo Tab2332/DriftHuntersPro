@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 
 const BasketRandomPage: React.FC = () => {
   return (
-    <div className="bg-gray-50 text-gray-900">
+    <div className="bg-gray-50 text-gray-900 pt-28">
       <Helmet>
         <title>Basket Random - Play 2-Player Basketball Game Free | Gamedock</title>
         <meta name="description" content="Play Basket Random for free on Gamedock! Experience the chaos and fun of physics-based basketball in this exciting 2-player game. No downloads required—start playing with friends now!" />

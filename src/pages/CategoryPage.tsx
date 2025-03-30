@@ -58,7 +58,7 @@ export const CategoryPage: React.FC = () => {
   const categoryDisplayName = getCategoryDisplayName(category || 'all');
 
   return (
-    <div className="min-h-screen bg-gray-50 pt-20">
+    <div className="min-h-screen bg-gray-50 pt-28">
       <Helmet>
         <title>{`${categoryDisplayName} - Gamedock | Fun & Casual Games | Puzzles & Challenges`}</title>
         <meta name="description" content={`Play ${categoryDisplayName.toLowerCase()} for free on Gamedock! Explore a variety of puzzles, challenges, and exciting mini-games. No downloads required—start playing now!`} />
