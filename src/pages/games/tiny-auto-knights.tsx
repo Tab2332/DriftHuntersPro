@@ -5,9 +5,9 @@ const TinyAutoKnightsPage: React.FC = () => {
   return (
     <div className="bg-gray-50 text-gray-900">
       <Helmet>
-        <title>Tiny Auto Knights - Epic Auto-Battler Action Game | TinyAutoKnights.com</title>
-        <meta name="description" content="Play Tiny Auto Knights online - An epic auto-battler where tiny but mighty knights battle through challenging adventures. Experience strategic action gameplay!" />
-        <link rel="canonical" href="https://tinyautoknights.com/games/tiny-auto-knights" />
+        <title>Tiny Auto Knights - Play Auto-Battler Game Free | Gamedock</title>
+        <meta name="description" content="Play Tiny Auto Knights for free on Gamedock! Command your army of tiny but mighty knights in this epic auto-battler adventure. No downloads required—start your strategic journey now!" />
+        <link rel="canonical" href="https://gamedock.com/games/tiny-auto-knights" />
       </Helmet>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

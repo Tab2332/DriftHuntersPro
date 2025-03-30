@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import { GameCard } from '../components/GameCard';
 import { CategoryNavigation } from '../components/CategoryNavigation';
 import { games } from '../data/games';
@@ -54,12 +55,19 @@ export const CategoryPage: React.FC = () => {
     }
   };
 
+  const categoryDisplayName = getCategoryDisplayName(category || 'all');
+
   return (
     <div className="min-h-screen bg-gray-50 pt-20">
+      <Helmet>
+        <title>{`${categoryDisplayName} - Gamedock | Fun & Casual Games | Puzzles & Challenges`}</title>
+        <meta name="description" content={`Play ${categoryDisplayName.toLowerCase()} for free on Gamedock! Explore a variety of puzzles, challenges, and exciting mini-games. No downloads required—start playing now!`} />
+      </Helmet>
+
       <CategoryNavigation />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <h1 className="text-3xl font-bold text-gray-900 mb-8">
-          {getCategoryDisplayName(category || 'all')}
+          {categoryDisplayName}
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {filteredGames.map(game => (

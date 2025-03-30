@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaPlay } from 'react-icons/fa';
+import { Helmet } from 'react-helmet';
 import { GameCard } from '../components/GameCard';
 import { games } from '../data/games';
 
@@ -12,6 +13,11 @@ const HomePage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-900">
+      <Helmet>
+        <title>Gamedock - Play for Free | Fun & Casual Games | Puzzles & Challenges</title>
+        <meta name="description" content="Play fun and casual games for free on Gamedock! Explore a variety of puzzles, challenges, and exciting mini-games. No downloads, no sign-ups—just click and play anytime!" />
+      </Helmet>
+
       {/* Hero Section */}
       <div className="relative bg-gray-800 py-24">
         <div className="container mx-auto px-6">

@@ -5,9 +5,9 @@ const BasketRandomPage: React.FC = () => {
   return (
     <div className="bg-gray-50 text-gray-900">
       <Helmet>
-        <title>Basket Random - Exciting 2-Player Basketball Game | BasketRandom.com</title>
-        <meta name="description" content="Play Basket Random online - A physics-based 2-player basketball game that brings chaos and fun to every match!" />
-        <link rel="canonical" href="https://basketrandom.com/games/basket-random" />
+        <title>Basket Random - Play 2-Player Basketball Game Free | Gamedock</title>
+        <meta name="description" content="Play Basket Random for free on Gamedock! Experience the chaos and fun of physics-based basketball in this exciting 2-player game. No downloads required—start playing with friends now!" />
+        <link rel="canonical" href="https://gamedock.com/games/basket-random" />
       </Helmet>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
