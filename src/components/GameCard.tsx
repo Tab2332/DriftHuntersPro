@@ -8,35 +8,27 @@ interface GameCardProps {
 
 export const GameCard: React.FC<GameCardProps> = ({ game }) => {
   return (
-    <div className="group relative bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
-      <div className="aspect-video w-full overflow-hidden">
+    <div className="group relative bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-lg">
+      <div className="aspect-[4/3] w-full overflow-hidden">
         <img
           src={game.imageUrl}
           alt={game.title}
           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
         />
       </div>
-      <div className="p-6">
-        <div className="flex items-center justify-between mb-2">
-          <h3 className="text-xl font-bold text-gray-900">{game.title}</h3>
-          <div className="flex items-center gap-2">
+      <div className="p-3">
+        <div className="flex items-center justify-between">
+          <h3 className="text-sm font-medium text-gray-900 truncate">{game.title}</h3>
+          <div className="flex items-center gap-1">
             {game.popularity > 90 && (
-              <Trophy className="w-5 h-5 text-yellow-500" />
+              <Trophy className="w-4 h-4 text-yellow-500" />
             )}
             {game.isNew && (
-              <Sparkles className="w-5 h-5 text-blue-500" />
+              <Sparkles className="w-4 h-4 text-blue-500" />
             )}
           </div>
         </div>
-        <p className="text-gray-600 mb-4">{game.description}</p>
-        <div className="flex items-center justify-between">
-          <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">
-            {game.category}
-          </span>
-          <button className="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors">
-            Play Now
-          </button>
-        </div>
+        <p className="text-xs text-gray-600 mt-1 line-clamp-2">{game.description}</p>
       </div>
     </div>
   );

@@ -21,8 +21,8 @@ export const games: Game[] = [
   },
   {
     id: '3',
-    title: 'Block Blast',
-    description: 'Classic block-matching puzzle game that tests your strategy',
+    title: 'Candy Match',
+    description: 'Match colorful candies in this addictive puzzle game',
     category: 'Casual',
     imageUrl: 'https://images.unsplash.com/photo-1628277613967-6abca504d0ac',
     popularity: 92,
@@ -30,16 +30,16 @@ export const games: Game[] = [
   },
   {
     id: '4',
-    title: 'Space Warrior',
-    description: 'Pilot your spaceship and defeat alien invaders',
-    category: 'Action',
+    title: 'Space Shooter',
+    description: 'Defend Earth from alien invasion in this action-packed shooter',
+    category: 'Shooting',
     imageUrl: 'https://images.unsplash.com/photo-1614732414444-096e5f1122d5',
     popularity: 90,
     isNew: false
   },
   {
     id: '5',
-    title: 'City Builder',
+    title: 'City Builder Pro',
     description: 'Build and manage your dream city',
     category: 'Strategy',
     imageUrl: 'https://images.unsplash.com/photo-1627556704302-624286467c65',
@@ -48,11 +48,65 @@ export const games: Game[] = [
   },
   {
     id: '6',
-    title: 'Card Duel',
-    description: 'Strategic card battle game',
-    category: 'Competitive',
+    title: 'Soccer Stars',
+    description: 'Experience the thrill of soccer with simple controls',
+    category: 'Sports',
     imageUrl: 'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf',
     popularity: 85,
     isNew: false
   },
+  {
+    id: '7',
+    title: 'Fashion Designer',
+    description: 'Create stunning outfits and become a fashion star',
+    category: 'Dress Up',
+    imageUrl: 'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf',
+    popularity: 82,
+    isNew: true
+  },
+  {
+    id: '8',
+    title: 'Chess Master',
+    description: 'Classic chess game with multiple difficulty levels',
+    category: 'Card',
+    imageUrl: 'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf',
+    popularity: 89,
+    isNew: false
+  },
+  {
+    id: '9',
+    title: 'Unicorn Adventure',
+    description: 'A magical adventure game for kids',
+    category: 'Kids',
+    imageUrl: 'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf',
+    popularity: 86,
+    isNew: true
+  },
+  {
+    id: '10',
+    title: 'Super Mario Clone',
+    description: 'Classic platform game with modern graphics',
+    category: 'Platform',
+    imageUrl: 'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf',
+    popularity: 94,
+    isNew: false
+  },
+  {
+    id: '11',
+    title: 'Makeup Artist',
+    description: 'Create beautiful makeup looks',
+    category: 'Girls',
+    imageUrl: 'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf',
+    popularity: 83,
+    isNew: true
+  },
+  {
+    id: '12',
+    title: 'Tank Battle',
+    description: 'Two-player tank battle game',
+    category: '2 Players',
+    imageUrl: 'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf',
+    popularity: 91,
+    isNew: true
+  }
 ];
