@@ -1,6 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Game } from '../types';
-import { Trophy, Sparkles } from 'lucide-react';
 
 interface GameCardProps {
   game: Game;
@@ -8,28 +8,33 @@ interface GameCardProps {
 
 export const GameCard: React.FC<GameCardProps> = ({ game }) => {
   return (
-    <div className="group relative bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-lg">
-      <div className="aspect-[4/3] w-full overflow-hidden">
-        <img
-          src={game.imageUrl}
-          alt={game.title}
-          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-        />
-      </div>
-      <div className="p-3">
-        <div className="flex items-center justify-between">
-          <h3 className="text-sm font-medium text-gray-900 truncate">{game.title}</h3>
-          <div className="flex items-center gap-1">
-            {game.popularity > 90 && (
-              <Trophy className="w-4 h-4 text-yellow-500" />
-            )}
-            {game.isNew && (
-              <Sparkles className="w-4 h-4 text-blue-500" />
-            )}
+    <Link to={`/games/${game.id}`} className="block w-[300px]">
+      <div className="bg-white rounded-2xl shadow-sm overflow-hidden transition-transform hover:scale-105 h-[320px]">
+        <div className="h-[200px] w-full relative">
+          <img
+            src={game.imageUrl}
+            alt={game.title}
+            className="w-full h-full object-cover"
+          />
+          {game.isNew && (
+            <span className="absolute top-2 right-2 bg-[#007AFF] text-white px-2 py-1 rounded-full text-sm">
+              New
+            </span>
+          )}
+        </div>
+        <div className="p-4">
+          <div className="flex items-center justify-between">
+            <h3 className="text-lg font-semibold text-gray-900 truncate">{game.title}</h3>
+            <div className="flex items-center">
+              <span className="text-yellow-500 mr-1">★</span>
+              <span className="text-sm text-gray-600">{game.popularity}%</span>
+            </div>
+          </div>
+          <div className="mt-2">
+            <span className="text-sm text-[#007AFF]">{game.category}</span>
           </div>
         </div>
-        <p className="text-xs text-gray-600 mt-1 line-clamp-2">{game.description}</p>
       </div>
-    </div>
+    </Link>
   );
 };

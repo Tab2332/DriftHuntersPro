@@ -1,16 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaPlay } from 'react-icons/fa';
-import { SearchBar } from '../components/SearchBar';
 import { GameCard } from '../components/GameCard';
 import { games } from '../data/games';
 
 const HomePage: React.FC = () => {
-  const [searchQuery, setSearchQuery] = useState('');
-  
-  const filteredGames = games.filter(game =>
-    game.title.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  // 获取最热门的3个游戏
+  const popularGames = [...games]
+    .sort((a, b) => b.popularity - a.popularity)
+    .slice(0, 3);
 
   return (
     <div className="min-h-screen bg-gray-900">
@@ -35,14 +33,11 @@ const HomePage: React.FC = () => {
         </div>
       </div>
 
-      {/* Search and Games Section */}
-      <div className="container mx-auto px-6 py-12">
-        <div className="mb-8">
-          <SearchBar onSearch={setSearchQuery} />
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {filteredGames.slice(0, 8).map(game => (
+      {/* Popular Games Section */}
+      <div className="container mx-auto px-4 py-12">
+        <h2 className="text-3xl font-bold text-white mb-8 text-center">Popular Games</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 max-w-[960px] mx-auto">
+          {popularGames.map(game => (
             <GameCard key={game.id} game={game} />
           ))}
         </div>
