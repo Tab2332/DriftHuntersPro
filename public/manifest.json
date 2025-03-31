@@ -1,0 +1,21 @@
+{
+  "name": "Gamedock - Play Free Online Games",
+  "short_name": "Gamedock",
+  "description": "Play fun and casual games for free on Gamedock! Explore a variety of puzzles, challenges, and exciting mini-games.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#007AFF",
+  "icons": [
+    {
+      "src": "/icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+} 
