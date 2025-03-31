@@ -6,7 +6,7 @@ export const games: Game[] = [
     title: 'Murder',
     description: 'Survive the intense action in this thrilling game!',
     category: 'Action',
-    imageUrl: '/games/image/Murder.avif',
+    imageUrl: '/games/image/murder.avif',
     popularity: 95,
     isNew: true
   },
@@ -33,7 +33,7 @@ export const games: Game[] = [
     title: 'Tiny Auto Knights',
     description: 'Build your team of mighty knights and watch them battle through epic adventures!',
     category: 'Strategy',
-    imageUrl: '/games/image/Tiny Auto Knights.avif',
+    imageUrl: '/games/image/tiny-auto-knights.avif',
     popularity: 92,
     isNew: true
   },
@@ -42,7 +42,7 @@ export const games: Game[] = [
     title: 'Basket Random',
     description: 'Challenge your friend in this exciting physics-based basketball game!',
     category: 'Sports',
-    imageUrl: '/games/image/Basket Random.avif',
+    imageUrl: '/games/image/basket-random.avif',
     popularity: 88,
     isNew: false
   }

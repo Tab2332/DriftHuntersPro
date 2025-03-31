@@ -15,7 +15,7 @@ const CrusherBlockPage = () => {
         
         <div className="aspect-video mb-8">
           <iframe
-            src="https://www.crazygames.com/embed/crusher-block-jwd"
+            src="https://html5.gamedistribution.com/1234567890/CrusherBlock/"
             className="w-full h-full border-0 rounded-lg shadow-lg"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
