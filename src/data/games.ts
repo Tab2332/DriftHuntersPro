@@ -24,7 +24,7 @@ export const games: Game[] = [
     title: 'Checkers & Draughts Multiplayer',
     description: 'Play the classic board game online with friends worldwide!',
     category: 'Puzzle',
-    imageUrl: '/games/image/Checkers & Draughts Multiplayer.avif',
+    imageUrl: '/games/image/checkers-draughts-multiplayer.avif',
     popularity: 85,
     isNew: true
   },
